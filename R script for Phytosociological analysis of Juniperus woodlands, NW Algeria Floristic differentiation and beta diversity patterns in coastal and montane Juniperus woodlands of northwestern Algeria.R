@@ -6,11 +6,6 @@ rm(list = ls())
 RNGkind(kind = "Mersenne-Twister", sample.kind = "Rejection")
 set.seed(2024)
 
-data_path <- "C:/Users/berber.medelmehdi/Downloads/phytosociologie/"
-if (!endsWith(data_path, "/") && !endsWith(data_path, "\\")) {
-  data_path <- paste0(data_path, "/")
-}
-
 packages <- c("readxl", "dplyr", "tidyr", "vegan", "cluster",
               "ggplot2", "ggrepel", "indicspecies", "betapart",
               "writexl", "permute")
